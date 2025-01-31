@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Ubuntu", serif;
+}
+html {
+    height: 100%;
+    width: 100%; 
+ 
+}
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+   padding: 0.5rem;
+  
+    
+  }
+  .Todo-app{
+    flex-grow: 1;
+    max-width: 800px;
+    color: black;
+    padding:0.6rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  }
+  .Add-todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    
+  }
+  h2{
+    margin-bottom: 0.8rem;
+  }
+  .Add-todo input[type="text"]{
+    width:50%;
+    padding: 6px;
+    border: none;
+    color:black;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  .Add-todo input[type="date"]{
+    width:25%;
+    padding: 5px;
+    border: none;
+    color:black;
+    cursor: pointer;
+    border: 1px solid gray;
+  }
+  .Add-todo button{
+    width:20%;
+    padding: 6px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+  
+  }
+  .Todo-item{
+    margin-bottom: 0.3rem;
+    display: flex;
+    gap:1rem;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .Todo-item .task{
+    width:50%;
+    background-color: aliceblue;
+    padding:6px ;
+  }
+  .Todo-item .task-date{
+    width:25%;
+    text-align: left;
+    background-color: aliceblue;
+    padding: 6px;
+  }
+  .Todo-item button{
+    width:20%;
+    padding: 6px;
+    border: none;
+    background-color: rgb(227, 83, 83);
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  @media (max-width:450px){
+   
+    h2{
+        font-size: 1rem;
+    }
+    .Add-todo input[type="text"]{
+        width:40%;
+        padding: 3px;
+        font-size: 0.7rem;
+      
+      }
+      .Add-todo input[type="date"]{
+        width:25%;
+        padding: 3px;
+        border: none;
+        color:black;
+        cursor: pointer;
+        border: 1px solid gray;
+        font-size: 0.7rem;
+      }
+      .Add-todo button{
+        width:30%;
+        padding: 3px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 0.7rem;
+      
+      }
+      .Todo-item .task{
+        width:40%;
+        padding: 3px;
+        font-size: 0.7rem;
+      }
+      .Todo-item .task-date{
+        width:25%;
+        padding: 3px;
+        font-size: 0.7rem;
+      }
+      .Todo-item button{
+        width:30%;
+        padding: 3px;
+        font-size: 0.7rem;
+      }
+  
+  }
